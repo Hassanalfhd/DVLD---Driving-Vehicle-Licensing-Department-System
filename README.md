@@ -53,7 +53,7 @@ The system is built using the **N-Tier Pattern**:
 2. Build and Run the project using **Visual Studio**.
 
  --
-### Skills Demonstrated
+### 🌟 Skills Demonstrated
 1. **Object-Oriented Programming (OOP):** Deep implementation of Inheritance, Polymorphism, and Encapsulation.
 2. **Database Design:** Mastery of Normalization (3NF), complex Relationships, Triggers, and Stored Procedures.
 3. **Security Best Practices:** Implementation of SHA2-256 Hashing, Windows Registry Access, and strict Permission Checks.
