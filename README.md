@@ -23,20 +23,21 @@
 * **Test Appointment System:** Prevents overlapping appointments and ensures prerequisites (e.g., must pass Vision before Written).
 * **Retake Logic:** Automatic application creation for retake exams with extra fees.
 
+## 🏗️ Project Structure & Architecture
+
+The system is organized into a clean **N-Tier Architecture** to separate concerns and enhance modularity:
+
+* **📂 DVLDNewProject (PL):** The **Presentation Layer**. Contains all Windows Forms, Custom User Controls (like `ctrlPersonCard`), and UI resources.
+* **📂 DVLD_Business:** The **Business Logic Layer (BLL)**. Acts as a bridge between the UI and Data layers, containing business entities, validation rules, and logic calculations.
+* **📂 DVLD_DataAccess:** The **Data Access Layer (DAL)**. Contains the ADO.NET logic, database connection helpers, and direct communication with SQL Server.
+* **📂 Database:** Contains the full SQL scripts for schema creation, stored procedures, and initial data seeding.
+* **📂 Screenshots:** Includes visual previews of the application's interface and key modules.
+
 ### 🛠️ Technical Highlights (Advanced Concepts)
 * **Custom Reusable Controls:** Developed specialized UI components (e.g., `ctrlPersonCard`, `ctrlScheduleTest`) to reduce code redundancy.
 * **Event Logging:** Integrated with **Windows Event Viewer** to log system exceptions and critical errors.
 * **Regex Validation:** Robust data validation for Emails, National IDs, and numeric inputs.
 * **Transaction Safety:** Business logic ensures data integrity before committing to the database.
-
-
-
-## 🏗️ Technical Architecture
-
-The system is built using the **N-Tier Pattern**:
-1.  **Presentation Layer (PL):** Windows Forms with advanced UI/UX controls.
-2.  **Business Logic Layer (BLL):** Handles validation, calculations, and rules.
-3.  **Data Access Layer (DAL):** ADO.NET for high-performance communication with SQL Server.
 
 ## 💻 Screenshots
 *(Add your project screenshots here to showcase your beautiful UI)*
