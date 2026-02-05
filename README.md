@@ -8,8 +8,7 @@
 
 ### 👤 Identity & User Management
 * **Person Management:** A centralized system to manage personal details (National No, Name, Birth Date, Gender, Nationality, Contact Info).
-* **User Accounts:** Secure login system with **SHA2-256 Hashed Passwords**.
-* **Role-Based Access:** Management of users (Admin/System Users) and their active status.
+* **User Accounts:** Secure login system with **SHA2-256 Hashed Passwords** and their active status.
 * **Registry-Based Credentials:** Feature to remember login credentials securely using the Windows Registry.
 
 ### 🚗 Driving License Life Cycle
@@ -56,7 +55,7 @@ The system is built using the **N-Tier Pattern**:
 ### 🌟 Skills Demonstrated
 1. **Object-Oriented Programming (OOP):** Deep implementation of Inheritance, Polymorphism, and Encapsulation.
 2. **Database Design:** Mastery of Normalization (3NF), complex Relationships, Triggers, and Stored Procedures.
-3. **Security Best Practices:** Implementation of SHA2-256 Hashing, Windows Registry Access, and strict Permission Checks.
+3. **Security Best Practices:** Implementation of SHA2-256 Hashing, and Windows Registry Access.
 4. **WinForms Advanced UI:** Creating Custom User Controls, utilizing Event Delegates for cross-control communication, and advanced Data Binding.
 
 ---
