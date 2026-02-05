@@ -58,4 +58,6 @@ The system is built using the **N-Tier Pattern**:
 2. **Database Design:** Mastery of Normalization (3NF), complex Relationships, Triggers, and Stored Procedures.
 3. **Security Best Practices:** Implementation of SHA2-256 Hashing, Windows Registry Access, and strict Permission Checks.
 4. **WinForms Advanced UI:** Creating Custom User Controls, utilizing Event Delegates for cross-control communication, and advanced Data Binding.
-Developed by: [Hasan Ameen Al-fahd]
+
+---
+**Developed by [Hasan Ameen Al-fahd]** *Focused on Clean Code, OOP, and Scalable Design.*
