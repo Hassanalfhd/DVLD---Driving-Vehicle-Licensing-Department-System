@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLDNewProject", "DVLDNewProject.csproj", "{E7127E10-C3EC-4E76-A824-7D5C2AE22CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_Buisness", "..\DVLD_Buisness\DVLD_Buisness.csproj", "{D2051D2B-FD41-43FB-9D92-31216C00E2CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_DataAccess", "..\DVLD_DataAccess\DVLD_DataAccess.csproj", "{6C14993F-6B74-49D6-AFAC-F30BD959E821}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7127E10-C3EC-4E76-A824-7D5C2AE22CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7127E10-C3EC-4E76-A824-7D5C2AE22CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7127E10-C3EC-4E76-A824-7D5C2AE22CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7127E10-C3EC-4E76-A824-7D5C2AE22CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2051D2B-FD41-43FB-9D92-31216C00E2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2051D2B-FD41-43FB-9D92-31216C00E2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2051D2B-FD41-43FB-9D92-31216C00E2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2051D2B-FD41-43FB-9D92-31216C00E2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C14993F-6B74-49D6-AFAC-F30BD959E821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C14993F-6B74-49D6-AFAC-F30BD959E821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C14993F-6B74-49D6-AFAC-F30BD959E821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C14993F-6B74-49D6-AFAC-F30BD959E821}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
