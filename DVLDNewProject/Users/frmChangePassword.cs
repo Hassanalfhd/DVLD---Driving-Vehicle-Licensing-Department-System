@@ -94,6 +94,7 @@ namespace DVLDNewProject.Users
             };
         }
 
+
         private void txtConfirmPassword_Validating(object sender, CancelEventArgs e)
         {
             if (txtConfirmPassword.Text.Trim() != txtNewPassword.Text.Trim())
@@ -120,9 +121,9 @@ namespace DVLDNewProject.Users
 
             // we will imporve the password saving to hash the password
             _User.Password = clsGlobal.ComputeHash(txtNewPassword.Text.Trim());
+            //_User.Password = txtNewPassword.Text.Trim();
 
 
-            hash.Text = _User.Password;
             if (_User.Save())
             {
                 MessageBox.Show("Password Changed Successfully.",
