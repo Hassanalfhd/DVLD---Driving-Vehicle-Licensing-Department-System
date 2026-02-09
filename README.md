@@ -33,6 +33,10 @@ The system is built on a clean **N-Tier Architecture** to separate concerns:
 
 ---
 
+| Database Diagram | 
+| :---: | :---: | :---: |
+| ![Databse Diagram](Screenshots/Database_Diagram.png) |
+
 ## 📸 Screenshots
 
 ### 🔑 Authentication & Home
