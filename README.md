@@ -1,63 +1,103 @@
 # 🛡️ DVLD - Driving & Vehicle Licensing Department System
 
-**DVLD** is a comprehensive desktop application designed to manage the lifecycle of driving licenses, vehicle registrations, and traffic violations. Built using **C#**, **.NET Framework**, and **SQL Server**, this project follows a strict **3-Tier Architecture** to ensure scalability, maintainability, and security.
+**DVLD** is a high-performance desktop application designed to manage the entire lifecycle of driving licenses, vehicle registrations, and traffic violations. Built using **C#**, **.NET Framework**, and **SQL Server**, this project follows a strict **3-Tier Architecture** to ensure industrial-grade scalability, maintainability, and security.
 
-
+---
 
 ## 🚀 Key Features
 
 ### 👤 Identity & User Management
-* **Person Management:** A centralized system to manage personal details (National No, Name, Birth Date, Gender, Nationality, Contact Info).
-* **User Accounts:** Secure login system with **SHA2-256 Hashed Passwords** and their active status.
-* **Registry-Based Credentials:** Feature to remember login credentials securely using the Windows Registry.
+* **Person Management:** Centralized system to manage personal details (National No, Name, Contact Info).
+* **Security:** Secure login system with **SHA2-256 Hashed Passwords**.
+* **Registry Integration:** Securely remember login credentials using the **Windows Registry**.
 
 ### 🚗 Driving License Life Cycle
-* **Local Driving Licenses:** Complete workflow from application entry to vision, written, and street tests.
-* **International Licenses:** Logic to issue international permits based on valid local licenses.
-* **License Renewals:** Handling expiration dates and renewal fees.
-* **Replacements:** Management of lost or damaged license replacements.
-* **Detained Licenses:** System to detain and release licenses with fine management.
+* **Full Workflow:** Comprehensive management of Local and International licenses from application to issuance.
+* **Services:** Automated handling of **Renewals**, **Replacements** (Lost/Damaged), and **Detained Licenses**.
+* **Fine Management:** Integrated system for detaining and releasing licenses with automatic fine calculation.
 
-### 📝 Test Management
-* **Dynamic Test Types:** Configurable fees and descriptions for Vision, Written, and Street tests.
-* **Test Appointment System:** Prevents overlapping appointments and ensures prerequisites (e.g., must pass Vision before Written).
-* **Retake Logic:** Automatic application creation for retake exams with extra fees.
-
-## 🏗️ Project Structure & Architecture
-
-The system is organized into a clean **N-Tier Architecture** to separate concerns and enhance modularity:
-
-* **📂 DVLDNewProject (PL):** The **Presentation Layer**. Contains all Windows Forms, Custom User Controls (like `ctrlPersonCard`), and UI resources.
-* **📂 DVLD_Business:** The **Business Logic Layer (BLL)**. Acts as a bridge between the UI and Data layers, containing business entities, validation rules, and logic calculations.
-* **📂 DVLD_DataAccess:** The **Data Access Layer (DAL)**. Contains the ADO.NET logic, database connection helpers, and direct communication with SQL Server.
-* **📂 Database:** Contains the full SQL scripts for schema creation, stored procedures, and initial data seeding.
-* **📂 Screenshots:** Includes visual previews of the application's interface and key modules.
-
-### 🛠️ Technical Highlights (Advanced Concepts)
-* **Custom Reusable Controls:** Developed specialized UI components (e.g., `ctrlPersonCard`, `ctrlScheduleTest`) to reduce code redundancy.
-* **Event Logging:** Integrated with **Windows Event Viewer** to log system exceptions and critical errors.
-* **Regex Validation:** Robust data validation for Emails, National IDs, and numeric inputs.
-* **Transaction Safety:** Business logic ensures data integrity before committing to the database.
-
-## 💻 Screenshots
-*(Add your project screenshots here to showcase your beautiful UI)*
-
-## 🛠️ Installation & Setup
-1. Clone the repository.
-2. Run the `Database_Script.sql` on your **SQL Server**.
-3. Update the `App.config` file with your connection string:
-   ```xml
-   <connectionStrings>
-      <add name="MyDbConnectionString" connectionString="Server=YOUR_SERVER;Database=DVLD;User Id=sa;Password=your_password;"/>
-   </connectionStrings>
-2. Build and Run the project using **Visual Studio**.
-
- --
-### 🌟 Skills Demonstrated
-1. **Object-Oriented Programming (OOP):** Deep implementation of Inheritance, Polymorphism, and Encapsulation.
-2. **Database Design:** Mastery of Normalization (3NF), complex Relationships, Triggers, and Stored Procedures.
-3. **Security Best Practices:** Implementation of SHA2-256 Hashing, and Windows Registry Access.
-4. **WinForms Advanced UI:** Creating Custom User Controls, utilizing Event Delegates for cross-control communication, and advanced Data Binding.
+### 📝 Dynamic Test Management
+* **Configurable Tests:** Dynamic management for Vision, Written, and Street tests.
+* **Smart Scheduling:** Prevents overlapping appointments and ensures all prerequisites are met.
 
 ---
-**Developed by [Hasan Ameen Al-fahd]** *Focused on Clean Code, OOP, and Scalable Design.*
+
+## 🏗️ Project Architecture & Database Design
+
+The system is built on a clean **N-Tier Architecture** to separate concerns:
+
+1.  **📂 Presentation Layer (PL):** Built with Windows Forms and **Custom Reusable User Controls** to ensure UI consistency.
+2.  **📂 Business Logic Layer (BLL):** Manages validation rules and complex business calculations.
+3.  **📂 Data Access Layer (DAL):** * **Stored Procedures:** All CRUD operations are executed via optimized Stored Procedures for maximum security and performance.
+    * **Database Views:** Complex data retrieval is handled through SQL Views to simplify data binding and improve speed.
+
+---
+
+## 📸 Screenshots
+
+### 🔑 Authentication & Home
+| Login Screen | Dashboard (Home) | Account Settings |
+| :---: | :---: | :---: |
+| ![Login](Screenshots/Login.png) | ![Home](Screenshots/Home.png) | ![AccountSettings](Screenshots/AccountSettingsMenu.png) |
+
+### 👥 People & User Management
+| Manage People | Add New Person | Manage Users |
+| :---: | :---: | :---: |
+| ![ManagePeople](Screenshots/ManagePeople.png) | ![AddNewPerson](Screenshots/AddNewPerson.png) | ![ManageUsers](Screenshots/ManageUsers.png) |
+
+| Add User (1) | Add User (2) | Profile View |
+| :---: | :---: | :---: |
+| ![AddUser1](Screenshots/AddNewUsre1.png) | ![AddUser2](Screenshots/AddNewUsre2.png) | ![Profile](Screenshots/Profile.png) |
+
+### 📜 Licensing Services
+| Applications Menu | Local Applications | International Applications |
+| :---: | :---: | :---: |
+| ![AppsMenu](Screenshots/ApplictiomsMenu.png) | ![LocalList](Screenshots/LocalLicensesApplictionsList.png) | ![IntList](Screenshots/InternationalLicensesApplictionsList.png) |
+
+| New Local License | New International License | Renew License |
+| :---: | :---: | :---: |
+| ![NewLocal](Screenshots/AddNewLocalDrivingLicensesAppliction.png) | ![NewInt](Screenshots/AddInternationalLicensesApplictioon.png) | ![Renew](Screenshots/RenewLicensesAppliction.png) |
+
+### 🚫 Detention & Enforcement
+| Detain Menu | Detain License | Release License |
+| :---: | :---: | :---: |
+| ![DetainMenu](Screenshots/DetainLicensesMenu.png) | ![Detain](Screenshots/DetainLicenses.png) | ![Release](Screenshots/ReleaseDetainedLicenses.png) |
+
+### 🛠️ Architecture Diagrams
+| PL Structure | BLL Structure | DAL Structure |
+| :---: | :---: | :---: |
+| ![PL](Screenshots/DVDL_PL_Structure.png) | ![BLL](Screenshots/DVDL_BL_Structure.png.png) | ![DAL](Screenshots/DVDL_DAL_Structure.png.png) |
+
+---
+
+## 🛠️ Technical Highlights
+* **Security:** SHA2-256 Encryption & SQL Injection prevention via Stored Procedures.
+* **Efficiency:** Used **Database Views** for fast data fetching.
+* **Logging:** Integrated with **Windows Event Viewer** for system error tracking.
+* **Validation:** Robust Regex-based validation for all user inputs.
+
+---
+
+## 🔮 Future Roadmap (Next Steps)
+* [ ] **Comprehensive Reporting:** Integrate **Microsoft Report Viewer** or Crystal Reports to generate PDF receipts, license documents, and statistical reports.
+* [ ] **Dashboard Analytics:** Add a visual dashboard using Charts to display monthly application trends and revenue.
+* [ ] **Email/SMS Notifications:** Automated alerts for license expiration or test reminders.
+* [ ] **Multi-Language Support:** Implementation of Localization (Arabic/English).
+
+---
+
+## 💻 Installation & Setup
+
+1.  Clone the repository.
+2.  Execute the `Database_Script.sql` on your **SQL Server**.
+3.  Update the `App.config` with your connection string:
+    ```xml
+    <connectionStrings>
+       <add name="MyDbConnectionString" connectionString="Server=YOUR_SERVER;Database=DVLD;User Id=sa;Password=your_password;"/>
+    </connectionStrings>
+    ```
+4.  Build and Run using **Visual Studio**.
+
+---
+**Developed by [Hasan Ameen Al-fahd]**
+*Focused on Clean Code, OOP, and Scalable Design.*
