@@ -47,30 +47,30 @@ The system is built on a clean **N-Tier Architecture** to separate concerns:
 ### 👥 People & User Management
 | Manage People | Add New Person | Manage Users |
 | :---: | :---: | :---: |
-| ![ManagePeople](Screenshots/ManagePeople.png) | ![AddNewPerson](Screenshots/AddNewPerson.png) | ![ManageUsers](Screenshots/ManageUsers.png) |
+| ![ManagePeople](screenshots/ManagePeople.png) | ![AddNewPerson](screenshots/AddNewPerson.png) | ![ManageUsers](screenshots/ManageUsers.png) |
 
 | Add User (1) | Add User (2) | Profile View |
 | :---: | :---: | :---: |
-| ![AddUser1](Screenshots/AddNewUsre1.png) | ![AddUser2](Screenshots/AddNewUsre2.png) | ![Profile](Screenshots/Profile.png) |
+| ![AddUser1](screenshots/AddNewUsre1.png) | ![AddUser2](screenshots/AddNewUsre2.png) | ![Profile](screenshots/Profile.png) |
 
 ### 📜 Licensing Services
 | Applications Menu | Local Applications | International Applications |
 | :---: | :---: | :---: |
-| ![AppsMenu](Screenshots/ApplictiomsMenu.png) | ![LocalList](Screenshots/LocalLicensesApplictionsList.png) | ![IntList](Screenshots/InternationalLicensesApplictionsList.png) |
+| ![AppsMenu](screenshots/ApplictiomsMenu.png) | ![LocalList](screenshots/LocalLicensesApplictionsList.png) | ![IntList](screenshots/InternationalLicensesApplictionsList.png) |
 
 | New Local License | New International License | Renew License |
 | :---: | :---: | :---: |
-| ![NewLocal](Screenshots/AddNewLocalDrivingLicensesAppliction.png) | ![NewInt](Screenshots/AddInternationalLicensesApplictioon.png) | ![Renew](Screenshots/RenewLicensesAppliction.png) |
+| ![NewLocal](screenshots/AddNewLocalDrivingLicensesAppliction.png) | ![NewInt](screenshots/AddInternationalLicensesApplictioon.png) | ![Renew](screenshots/RenewLicensesAppliction.png) |
 
 ### 🚫 Detention & Enforcement
 | Detain Menu | Detain License | Release License |
 | :---: | :---: | :---: |
-| ![DetainMenu](Screenshots/DetainLicensesMenu.png) | ![Detain](Screenshots/DetainLicenses.png) | ![Release](Screenshots/ReleaseDetainedLicenses.png) |
+| ![DetainMenu](screenshots/DetainLicensesMenu.png) | ![Detain](screenshots/DetainLicenses.png) | ![Release](screenshots/ReleaseDetainedLicenses.png) |
 
 ### 🛠️ Architecture Diagrams
 | PL Structure | BLL Structure | DAL Structure |
 | :---: | :---: | :---: |
-| ![PL](Screenshots/DVDL_PL_Structure.png) | ![BLL](Screenshots/DVDL_BL_Structure.png.png) | ![DAL](Screenshots/DVDL_DAL_Structure.png.png) |
+| ![PL](screenshots/DVDL_PL_Structure.png) | ![BLL](screenshots/DVDL_BL_Structure.png.png) | ![DAL](screenshots/DVDL_DAL_Structure.png.png) |
 
 ---
 
