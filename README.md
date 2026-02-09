@@ -35,7 +35,7 @@ The system is built on a clean **N-Tier Architecture** to separate concerns:
 
  Database Diagram  
 
- ![Database Diagram](Screenshots/Database_Diagram.png) 
+ ![Database Diagram](Database/Database_Diagram.png) 
 
 ## 📸 Screenshots
 
