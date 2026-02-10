@@ -101,7 +101,7 @@ The system is built on a clean **N-Tier Architecture** to separate concerns:
     </connectionStrings>
     ```
 4.  Build and Run using **Visual Studio**.
-
+5. Login with username **hassan** and password **12345**
 ---
 **Developed by [Hasan Ameen Al-fahd]**
 *Focused on Clean Code, OOP, and Scalable Design.*
