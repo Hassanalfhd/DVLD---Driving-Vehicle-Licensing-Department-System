@@ -117,7 +117,7 @@ namespace DVLDNewProject.Users
 
             _User.PersonID = ctrlPersonCardWithFilter1.PersonID;
             _User.UserName = txtUserName.Text.Trim();
-            _User.Password = clsGlobal.ComputeHash(txtPassword.Text.Trim());
+            _User.Password = txtPassword.Text.Trim();
             _User.IsActive = chkIsActive.Checked;
 
 

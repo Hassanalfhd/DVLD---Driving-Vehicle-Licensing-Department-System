@@ -39,10 +39,10 @@ namespace DVLDNewProject.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string Password = clsGlobal.ComputeHash(txtPassword.Text);
+            //string Password = clsGlobal.ComputeHash(txtPassword.Text);
             //string Password = txtPassword.Text;
 
-            clsUser user = clsUser.FindByUsernameAndPassword(txtUserName.Text, Password);
+            clsUser user = clsUser.FindByUsernameAndPassword(txtUserName.Text, txtPassword.Text);
 
            
 

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using DVLD_DataAccess;
+using System.Security.Cryptography;
 
 namespace DVLD_Buisness
 {
@@ -47,7 +48,7 @@ namespace DVLD_Buisness
             //call DataAccess Layer 
 
             this.UserID = clsUserData.AddNewUser(this.PersonID, this.UserName,
-                this.Password, this.IsActive);
+                ComputeHash(this.Password), this.IsActive);
 
             return (this.UserID != -1);
         }
@@ -57,7 +58,7 @@ namespace DVLD_Buisness
             //call DataAccess Layer 
 
             return clsUserData.UpdateUser(this.UserID, this.PersonID, this.UserName,
-                this.Password, this.IsActive);
+                ComputeHash(this.Password), this.IsActive);
         }
 
         public static clsUser FindByUserID(int UserID)
@@ -100,7 +101,7 @@ namespace DVLD_Buisness
             bool IsActive = false;
 
             bool IsFound = clsUserData.GetUserInfoByUsernameAndPassword
-                                (UserName, Password, ref UserID, ref PersonID, ref IsActive);
+                                (UserName, ComputeHash(Password), ref UserID, ref PersonID, ref IsActive);
 
             if (IsFound)
                 //we return new object of that User with the right data
@@ -167,6 +168,20 @@ namespace DVLD_Buisness
         public bool ChangePassword()
         {
             return clsUserData.ChangePassword(UserID, Password);
+        }
+
+
+        // Helper 
+        public static string ComputeHash(string Input)
+        {
+            using (SHA256 sha26 = SHA256.Create())
+            {
+
+                byte[] HashBytes = sha26.ComputeHash(Encoding.UTF8.GetBytes(Input));
+
+                return BitConverter.ToString(HashBytes).Replace("-", "").ToLower();
+
+            }
         }
     }
 }

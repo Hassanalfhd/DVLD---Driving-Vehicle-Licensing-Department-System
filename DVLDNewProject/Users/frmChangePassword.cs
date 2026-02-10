@@ -120,7 +120,7 @@ namespace DVLDNewProject.Users
             }
 
             // we will imporve the password saving to hash the password
-            _User.Password = clsGlobal.ComputeHash(txtNewPassword.Text.Trim());
+            _User.Password = txtNewPassword.Text.Trim();
             //_User.Password = txtNewPassword.Text.Trim();
 
 
