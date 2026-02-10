@@ -146,6 +146,16 @@ namespace DVLDNewProject.Classes
             }
         }
 
+        public static string ComputeHash(string Input)
+        {
+            using (SHA256 sha26 = SHA256.Create())
+            {
 
+                byte[] HashBytes = sha26.ComputeHash(Encoding.UTF8.GetBytes(Input));
+
+                return BitConverter.ToString(HashBytes).Replace("-", "").ToLower();
+
+            }
+        }
     }
 }

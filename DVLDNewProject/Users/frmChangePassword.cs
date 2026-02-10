@@ -69,7 +69,7 @@ namespace DVLDNewProject.Users
 
 
 
-            if (_User.Password != txtCurrentPassword.Text.Trim())
+            if (_User.Password != clsGlobal.ComputeHash(txtCurrentPassword.Text.Trim()))
             {
                 e.Cancel = true;
                 errorProvider1.SetError(txtCurrentPassword, "Current password is wrong!");

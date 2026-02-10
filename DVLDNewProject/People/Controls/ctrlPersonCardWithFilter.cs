@@ -85,6 +85,8 @@ namespace DVLDNewProject.People.Controls
 
         private void FindNow()
         {
+
+
             switch (cbFilterBy.Text)
             {
                 case "Person ID":
